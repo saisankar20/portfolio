@@ -1,35 +1,55 @@
 :root {
     --primary: #1a1a1a;
     --accent: #FF6B6B;
+    --background-light: #ffffff;
+    --background-dark: #1a1a1a;
+    --text-light: #1a1a1a;
+    --text-dark: #ffffff;
 }
 
 body {
-    background-color: #ffffff;
-    color: var(--primary);
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--background-dark);
+        color: var(--text-dark);
+    }
+
+    .glass {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--text-dark);
+    }
 }
 
 .glass {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 10px;
 }
 
 .scroll-section {
     scroll-snap-align: start;
-    min-height: auto;
+    min-height: 100vh;
     padding: 80px 0;
 }
 
 .project-card {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 html {
-    /*scroll-snap-type: y mandatory; */
     scroll-behavior: smooth;
 }
 
@@ -39,15 +59,8 @@ html {
 }
 
 @keyframes blink {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .skill-badge {
@@ -67,13 +80,13 @@ canvas {
 }
 
 .hero-content {
-    animation: fadeIn 1s;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .mobile-menu {
     display: none;
     transform: translateY(-100%);
-    transition: 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .mobile-menu.active {
@@ -85,5 +98,20 @@ canvas {
     from {
         opacity: 0;
         transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+
+    .scroll-section {
+        padding: 60px 20px;
     }
 }
