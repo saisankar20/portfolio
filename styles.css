@@ -1,51 +1,72 @@
-/* 🌑 General Background Fix */
+/* 🌑 General Background & Text */
 body, html {
-    background-color: #121212 !important;
-    color: #E0E0E0 !important;
+    background-color: #121212 !important; /* Dark background */
+    color: #E0E0E0 !important; /* Light text */
+    font-family: 'Poppins', sans-serif; /* Modern font */
 }
 
-/* 🌟 Improve Text Readability */
-h1, h2, h3, h4, h5, h6 {
-    color: #FFFFFF !important; /* Bright white headers for contrast */
-}
-
-p, span, li {
-    color: #E0E0E0 !important; /* Softer white for readability */
-}
-
-/* 🎨 Navbar Fix */
+/* 🎨 Navbar Styling */
 nav {
     background-color: rgba(20, 20, 20, 0.9) !important; /* Slight transparency for depth */
+    color: #E0E0E0 !important;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+nav a {
+    color: #E0E0E0 !important; /* Light gray text */
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #FF6B6B !important; /* Accent hover effect */
 }
 
 /* 🔳 Cards (Projects, Experience, Certifications) */
 .project-card, .experience-card {
-    background-color: #1E1E1E !important; /* Dark gray instead of black */
+    background-color: #1E1E1E !important; /* Dark gray */
     color: #E0E0E0 !important;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle glow */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.08); /* Subtle glow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* 🎖️ Skills Badges */
+.project-card:hover, .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.15);
+}
+
+/* 🏆 Skills Tags */
 .skill-badge {
-    background-color: #333333 !important; /* Dark gray instead of pure white */
-    color: #E0E0E0 !important;
+    background-color: #333333 !important; /* Dark gray */
+    color: #FFD700 !important; /* Gold text */
     border-radius: 8px;
     padding: 5px 10px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.skill-badge:hover {
+    background-color: #FF6B6B !important; /* Accent color on hover */
+    color: white !important;
 }
 
 /* 🔘 Buttons */
 button {
     background-color: #FF6B6B !important; /* Red for contrast */
-    color: white !important;
+    color: #FFFFFF !important;
+    font-weight: bold;
     border-radius: 8px;
-    padding: 10px 15px;
-    transition: background 0.3s ease-in-out;
+    padding: 12px 16px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 button:hover {
     background-color: #FF4040 !important;
+    transform: scale(1.05);
 }
 
 /* 📄 Contact Card */
@@ -55,11 +76,14 @@ button:hover {
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* 🔗 Fix Links */
 a {
     color: #FF6B6B !important; /* Accent color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
@@ -77,7 +101,7 @@ span {
 /* 🏷️ Skill/Tag Spans */
 span.skill-badge {
     background-color: #333333 !important; /* Dark gray background */
-    color: #E0E0E0 !important; /* Light text */
+    color: #FFD700 !important; /* Gold text */
     border-radius: 8px;
     padding: 5px 10px;
     font-weight: bold;
@@ -103,4 +127,3 @@ span.highlight {
     color: #FFD700 !important; /* Gold */
     font-weight: bold;
 }
-
