@@ -7,69 +7,81 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* 🌑 Set Dark Theme */
+        /* 🌑 Dark Background */
         body, html {
             background-color: #121212 !important;
             color: #E0E0E0 !important;
         }
 
-        /* 🔳 Fix Navbar Background */
+        /* 🔳 Fixed Navbar */
         nav {
-            background-color: #1A1A1A !important; /* Fully opaque */
+            background-color: #1A1A1A !important;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 15px 0;
         }
 
-        /* 📌 Fix Sections */
-        .scroll-section {
-            background-color: #121212 !important; /* Solid background */
-            color: #E0E0E0 !important;
-            padding: 80px 0;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* 🔳 Fix Cards */
-        .project-card, .experience-card {
-            background-color: #1E1E1E !important; /* Dark gray */
-            color: #E0E0E0 !important;
-            border-radius: 12px;
+        /* 📌 Fix Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #121212 !important;
             padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         }
 
-        /* 📄 Fix Contact Card */
-        .contact-card {
-            background-color: #1E1E1E !important;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: #E0E0E0 !important;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-        }
-
-        /* 🎖️ Skills Badges */
-        .skill-badge {
-            background-color: #333333 !important;
-            color: #E0E0E0 !important;
-            border-radius: 8px;
-            padding: 5px 10px;
-            font-weight: bold;
-        }
-
-        /* 🔘 Fix Buttons */
-        button {
+        /* 🔳 Fix Button */
+        .resume-btn {
             background-color: #FF6B6B !important;
             color: white !important;
             border-radius: 8px;
-            padding: 10px 15px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
             transition: background 0.3s ease-in-out;
         }
 
-        button:hover {
+        .resume-btn:hover {
             background-color: #FF4040 !important;
         }
     </style>
 </head>
+
+<body class="overflow-x-hidden text-white">
+    <!-- 🔝 Navigation Bar -->
+    <nav class="fixed w-full z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-mono font-bold">Sai Sankar Bhuvanapalli</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-[#FF6B6B] transition-colors">home</a>
+                <a href="#about" class="hover:text-[#FF6B6B] transition-colors">about</a>
+                <a href="#experience" class="hover:text-[#FF6B6B] transition-colors">experience</a>
+                <a href="#projects" class="hover:text-[#FF6B6B] transition-colors">projects</a>
+                <a href="#skills" class="hover:text-[#FF6B6B] transition-colors">skills</a>
+                <a href="#certifications" class="hover:text-[#FF6B6B] transition-colors">certifications</a>
+                <a href="#contact" class="hover:text-[#FF6B6B] transition-colors">contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🚀 Hero Section -->
+    <div id="home" class="hero">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Sai Sankar Bhuvanapalli</h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-6">Software Engineer | Data Engineer</p>
+
+        <!-- 📄 Resume Button -->
+        <a href="https://github.com/saisankar20/Resume/blob/main/resume-SaiSankar.pdf?raw=true" 
+           download="SaiSankar_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button class="resume-btn">
+                Download My Resume
+            </button>
+        </a>
+    </div>
+</body>
+
+
 
 <body class="overflow-x-hidden text-white">
    <nav class="fixed w-full z-50 shadow-md">
