@@ -1,31 +1,67 @@
-html, body {
-    background-color: black !important;
-    color: white !important;
+/* 🌑 General Background Fix */
+body, html {
+    background-color: #121212 !important;
+    color: #E0E0E0 !important;
 }
 
-.scroll-section,
-.hero,
-nav,
-.project-card,
-.experience-card {
-    background-color: black !important;
-    color: white !important;
+/* 🌟 Improve Text Readability */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF !important; /* Bright white headers for contrast */
 }
 
-/* Ensure cards and sections also have a dark background */
-.project-card, .experience-card {
-    background-color: #1a1a1a !important; /* Slightly lighter black for contrast */
-    color: white !important;
+p, span, li {
+    color: #E0E0E0 !important; /* Softer white for readability */
 }
 
-/* Fix navigation bar */
+/* 🎨 Navbar Fix */
 nav {
-    background-color: black !important;
-    border-bottom: 1px solid #333; /* Optional: subtle border */
+    background-color: rgba(20, 20, 20, 0.9) !important; /* Slight transparency for depth */
 }
 
-/* Override Tailwind's background classes */
-.bg-background-light,
-.dark\:bg-background-dark {
-    background-color: black !important;
+/* 🔳 Cards (Projects, Experience, Certifications) */
+.project-card, .experience-card {
+    background-color: #1E1E1E !important; /* Dark gray instead of black */
+    color: #E0E0E0 !important;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle glow */
+}
+
+/* 🎖️ Skills Badges */
+.skill-badge {
+    background-color: #333333 !important; /* Dark gray instead of pure white */
+    color: #E0E0E0 !important;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+/* 🔘 Buttons */
+button {
+    background-color: #FF6B6B !important; /* Red for contrast */
+    color: white !important;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FF4040 !important;
+}
+
+/* 📄 Contact Card */
+.contact-card {
+    background-color: #1E1E1E !important;
+    color: #E0E0E0 !important;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* 🔗 Fix Links */
+a {
+    color: #FF6B6B !important; /* Accent color */
+}
+
+a:hover {
+    color: #FF4040 !important;
 }
