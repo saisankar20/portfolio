@@ -127,3 +127,36 @@ span.highlight {
     color: #FFD700 !important; /* Gold */
     font-weight: bold;
 }
+
+/* 🌑 Fix Sections Background */
+.scroll-section {
+    background-color: #121212 !important; /* Solid dark background */
+    color: #E0E0E0 !important;
+    padding: 60px 0;
+}
+
+/* 🎨 Fix Navbar Transparency */
+nav {
+    background-color: #1A1A1A !important; /* Solid color to remove glare */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+/* 🔳 Fix Cards */
+.project-card, .experience-card {
+    background-color: #1E1E1E !important; /* Dark gray */
+    color: #E0E0E0 !important;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05); /* Reduce white glow */
+}
+
+/* 📄 Fix Contact Card */
+.contact-card {
+    background-color: #1E1E1E !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #E0E0E0 !important;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
