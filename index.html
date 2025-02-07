@@ -8,28 +8,27 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-        .hero {
-    height: calc(100vh - 60px); /* Adjust height considering navbar */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* Remove the background image */
-    /* background: url('hero.gif') no-repeat center center/cover; */
-    background-color: #f9f9f9; /* Optional: Set a solid background color */
-}
-
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: white;
+            margin: 0;
+            padding: 0;
         }
-        h1, p {
-    margin: 0;
-    padding: 5px 0;
-}
-
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('hero.gif') no-repeat center center/cover;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.2rem;
+        }
         nav {
             position: absolute;
             top: 10px;
