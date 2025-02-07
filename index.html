@@ -6,7 +6,7 @@
     <title>Sai Sankar Bhuvanapalli | Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
+    /*<style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -41,11 +41,11 @@
             color: black;
             font-size: 1rem;
         }
-    </style>
+    </style>*/
     
 </head>
-<body class="overflow-x-hidden">
-    <nav class="fixed w-full z-50 glass">
+<body class="overflow-x-hidden bg-background-light text-text-light dark:bg-background-dark dark:text-text-dark">
+   <nav class="fixed w-full z-50 bg-white dark:bg-gray-900 shadow-md">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#home" class="text-xl font-mono">Sai Sankar Bhuvanapalli</a>
             <div class="hidden md:flex space-x-8">
@@ -64,7 +64,9 @@
     <p>Software Engineer & Data Engineer</p>
     
     <!-- Download Resume Button -->
-    <a href="https://github.com/saisankar20/Resume/blob/main/resume-SaiSankar.pdf?raw=true" download="SaiSankar_Resume.pdf">
+    <a href="https://github.com/saisankar20/Resume/blob/main/resume-SaiSankar.pdf?raw=true" 
+   download="SaiSankar_Resume.pdf" target="_blank" rel="noopener noreferrer">
+
     <button class="mt-4 px-6 py-3 text-black bg-neutral-200 border border-black rounded-lg shadow-md hover:bg-neutral-300 transition cursor-pointer opacity-100">
         Download My Resume
     </button>
@@ -77,7 +79,8 @@
 
 </body>
     <!-- About -->
-<section id="about" class="scroll-section bg-gray-50 flex items-center justify-center min-h-screen">
+<section id="about" class="scroll-section bg-background-light dark:bg-background-dark flex items-center justify-center min-h-screen">
+
     <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -93,7 +96,8 @@
                 </div>
             </div>
             <div class="relative">
-                <img src="img/me.jpg" alt="Profile" class="rounded-lg shadow-lg">
+                <img src="img/me.jpg" alt="Sai Sankar Bhuvanapalli" class="rounded-lg shadow-lg" loading="lazy">
+
             </div>
         </div>
     </div>
@@ -101,7 +105,7 @@
 
 
 
-  <section id="experience" class="scroll-section bg-gray-50 flex items-center justify-center min-h-screen">
+  <section id="experience" class="scroll-section bg-background-light dark:bg-background-dark flex items-center justify-center min-h-screen">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold mb-12 text-center">Experience</h2>
         <div class="grid md:grid-cols-2 gap-8">
@@ -136,7 +140,7 @@
 
 
 
-  <section id="projects" class="scroll-section">
+ <section id="projects" class="scroll-section bg-background-light dark:bg-background-dark flex items-center justify-center min-h-screen">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold mb-12 text-center">projects</h2>
         <div class="grid md:grid-cols-2 gap-8">
@@ -202,7 +206,7 @@
 </section>
 
 
-  <section id="skills" class="scroll-section py-10 flex justify-center">
+ <section id="skills" class="scroll-section bg-background-light dark:bg-background-dark flex items-center justify-center min-h-screen">
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-6">Technical Skills</h2>
         <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -265,7 +269,8 @@
 
 
 
-   <section id="certifications" class="scroll-section">
+  <section id="certifications" class="scroll-section bg-background-light dark:bg-background-dark flex items-center justify-center min-h-screen">
+
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold mb-12 text-center">My Certifications</h2>
         <div class="grid md:grid-cols-2 gap-8">
@@ -326,7 +331,8 @@
 </section>
 
 
-    <section id="contact" class="scroll-section bg-gray-50 flex items-center justify-center min-h-screen">
+    <section id="contact" class="scroll-section bg-background-light dark:bg-background-dark flex items-center justify-center min-h-screen">
+
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8">Let's Connect</h2>
         <div class="max-w-xl mx-auto bg-white p-10 rounded-xl shadow-xl">
