@@ -6,6 +6,41 @@
     <title>Sai Sankar Bhuvanapalli | Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('hero.gif') no-repeat center center/cover;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body class="overflow-x-hidden">
     <nav class="fixed w-full z-50 glass">
@@ -21,7 +56,11 @@
             </div>
         </div>
     </nav>
-
+    <div class="hero">
+        <h1>Hi, I'm Sai Sankar Bhuvanapalli</h1>
+        <p>Software Engineer & Data Engineer</p>
+    </div>
+</body>
     <!-- About -->
 <section id="about" class="scroll-section bg-gray-50">
     <div class="container mx-auto px-4">
