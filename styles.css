@@ -1,10 +1,14 @@
 :root {
-    --primary: #1a1a1a;
-    --accent: #FF6B6B;
+    --primary-color: #1a1a1a;
+    --accent-color: #FF6B6B;
     --background-light: #ffffff;
-    --background-dark: #1a1a1a;
+    --background-dark: #121212;
     --text-light: #1a1a1a;
     --text-dark: #ffffff;
+    --card-light: #ffffff;
+    --card-dark: #2a2a2a;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-dark: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -26,19 +30,20 @@ body {
     }
 
     .hero {
-        background: #121212;
+        background: var(--background-dark);
     }
 
     .project-card, .experience-card {
-        background-color: #2a2a2a;
-        color: #ffffff;
+        background-color: var(--card-dark);
+        color: var(--text-dark);
+        box-shadow: 0 4px 6px var(--shadow-dark);
     }
 }
 
 .glass {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--shadow-light);
     border-radius: 12px;
     padding: 10px;
 }
@@ -50,12 +55,15 @@ body {
 }
 
 .project-card {
+    background-color: var(--card-light);
+    color: var(--text-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px var(--shadow-light);
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 12px var(--shadow-light);
 }
 
 html {
@@ -74,11 +82,13 @@ html {
 
 .skill-badge {
     transition: all 0.3s ease;
+    background-color: var(--card-light);
+    color: var(--text-light);
 }
 
 .skill-badge:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--shadow-light);
 }
 
 canvas {
@@ -94,7 +104,7 @@ canvas {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+    background: linear-gradient(to bottom, var(--background-light), #e0e0e0);
 }
 
 .hero-content {
