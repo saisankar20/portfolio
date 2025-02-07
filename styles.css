@@ -65,3 +65,42 @@ a {
 a:hover {
     color: #FF4040 !important;
 }
+
+/* 🌈 General Span Styling */
+span {
+    color: #FF6B6B !important; /* Accent color */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle white tint */
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+/* 🏷️ Skill/Tag Spans */
+span.skill-badge {
+    background-color: #333333 !important; /* Dark gray background */
+    color: #E0E0E0 !important; /* Light text */
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+/* 🎯 Hover Effect for Span */
+span:hover {
+    background-color: #FF4040 !important;
+    color: white !important;
+    transition: background 0.3s ease-in-out;
+}
+
+/* 🔹 Light Gray Span for Secondary Elements */
+span.secondary {
+    color: #B0B0B0 !important;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+/* 🏆 Highlight Span */
+span.highlight {
+    color: #FFD700 !important; /* Gold */
+    font-weight: bold;
+}
+
